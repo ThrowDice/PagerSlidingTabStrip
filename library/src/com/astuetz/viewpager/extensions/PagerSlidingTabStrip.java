@@ -219,6 +219,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
 					getViewTreeObserver().removeOnGlobalLayoutListener(this);
 				}
 
+				currentPositionOffset = 0;
 				currentPosition = pager.getCurrentItem();
 				scrollToChild(currentPosition, 0);
 			}
